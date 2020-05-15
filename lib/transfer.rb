@@ -23,7 +23,7 @@ class Transfer
     end  
     !sender.valid? 
      "Transaction rejected. Please check your account balance."
-    end
+    
   
 #    binding.pry
   end
