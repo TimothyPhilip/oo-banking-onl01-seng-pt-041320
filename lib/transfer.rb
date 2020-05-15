@@ -22,7 +22,7 @@ class Transfer
       @status = "complete"
     elsif !valid? || @status == "complete" || @status == "rejected"
       @status = "rejected"
-      "Transaction rejected. Please check your account balance."
+      return "Transaction rejected. Please check your account balance."
     end
   
 #   binding.pry
