@@ -22,7 +22,7 @@ class Transfer
     @status = "complete"
   end
   
-    binding.pry
+#    binding.pry
   end
   
  
