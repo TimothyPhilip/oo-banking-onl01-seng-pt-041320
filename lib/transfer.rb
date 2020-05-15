@@ -20,7 +20,7 @@ class Transfer
       sender.balance = sender.balance - amount
       receiver.balance = receiver.balance + amount
       @status = "complete"
-    elsif !valid? || @status = "complete"
+    elsif !valid? || @status = "complete" || @status = "rejected"
       @satus = "rejected"
       "Transaction rejected. Please check your account balance."
     end
