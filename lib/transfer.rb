@@ -22,7 +22,9 @@ class Transfer
       @status = "complete"
     end  
     if sender.closed_account == true
-      
+      "Transaction rejected. Please check your account balance."
+      @satus = "rejected"
+    end
       
     
     
