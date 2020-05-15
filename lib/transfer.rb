@@ -20,10 +20,12 @@ class Transfer
       sender.balance = sender.balance - amount
       receiver.balance = receiver.balance + amount
       @status = "complete"
-    elsif sender.closed_account
+    end
+    
+    !sender.valid?
       "Transaction rejected. Please check your account balance."
       @satus = "rejected"
-    end
+  
       
     
     
