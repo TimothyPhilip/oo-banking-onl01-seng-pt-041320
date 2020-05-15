@@ -20,7 +20,7 @@ class Transfer
     receiver.balance = receiver.balance + amount
     @status = "complete"
     
-    binding.pry
+ #   binding.pry
   end
   
  # if !sender.valid? 
