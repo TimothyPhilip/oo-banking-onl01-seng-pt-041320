@@ -26,10 +26,6 @@ class Transfer
       "Transaction rejected. Please check your account balance."
       @satus = "rejected"
   
-      
-    
-    
-  
 #    binding.pry
   end
   
