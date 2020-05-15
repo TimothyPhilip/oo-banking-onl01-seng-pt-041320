@@ -16,10 +16,8 @@ class Transfer
   end
   
   def execute_transaction
-    1.times do 
     sender.balance = sender.balance - amount
     receiver.balance = receiver.balance + amount
-    end
     @status = "complete"
     
  #   binding.pry
