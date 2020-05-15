@@ -23,7 +23,7 @@ class Transfer
     end
     
     !sender.valid?
-    @satus = "rejected"
+      @satus = "rejected"
       "Transaction rejected. Please check your account balance."
       
   
