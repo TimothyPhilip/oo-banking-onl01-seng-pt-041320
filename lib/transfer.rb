@@ -16,11 +16,11 @@ class Transfer
   end
   
   def execute_transaction
-    if valid? && sender.balance > amount
+    if valid? && sender.balance >= amount
       sender.balance = sender.balance - amount
       receiver.balance = receiver.balance + amount
       @status = "complete"
-    elsif !valid?
+    elsif !valid? || @status = "complete"
       @satus = "rejected"
       "Transaction rejected. Please check your account balance."
     end
