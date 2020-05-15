@@ -22,10 +22,10 @@ class Transfer
       @status = "complete"
     end
     
-    if !sender.valid?
+   !sender.valid?
       @satus = "rejected"
       "Transaction rejected. Please check your account balance."
-    end
+    
   
  #  binding.pry
   end
