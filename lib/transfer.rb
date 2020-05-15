@@ -23,8 +23,9 @@ class Transfer
     end
     
     !sender.valid?
+    @satus = "rejected"
       "Transaction rejected. Please check your account balance."
-      @satus = "rejected"
+      
   
  #  binding.pry
   end
