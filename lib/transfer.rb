@@ -22,9 +22,8 @@ class Transfer
       @status = "complete"
     elsif !valid? || @status == "complete" || @status == "rejected"
       @status = "rejected"
-      return "Transaction rejected. Please check your account balance."
     end
-
+    "Transaction rejected. Please check your account balance."
   end
   
   def reverse_transfer
