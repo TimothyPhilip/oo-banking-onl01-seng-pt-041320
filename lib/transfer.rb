@@ -24,8 +24,8 @@ class Transfer
   end
   
  # if !sender.valid? 
-      "Transaction rejected. Please check your account balance."
-    end
+ #     "Transaction rejected. Please check your account balance."
+ #   end
   
   
   
