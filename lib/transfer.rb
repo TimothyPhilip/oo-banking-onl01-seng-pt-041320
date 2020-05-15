@@ -21,7 +21,8 @@ class Transfer
       receiver.balance = receiver.balance + amount
       @status = "complete"
     end  
-    if sender.closed_account
+    if sender.closed_account == true
+      
       
     
     
