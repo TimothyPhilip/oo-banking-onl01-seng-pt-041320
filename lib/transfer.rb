@@ -17,10 +17,12 @@ class Transfer
   
   def execute_transaction
     if sender.balance == 1000
-    sender.balance = sender.balance - amount
-    receiver.balance = receiver.balance + amount
-    @status = "complete"
-  end
+      sender.balance = sender.balance - amount
+      receiver.balance = receiver.balance + amount
+      @status = "complete"
+    elsif !valid?
+      
+    end
   
 #    binding.pry
   end
